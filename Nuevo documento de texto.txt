@@ -1,5 +1,0 @@
-https://dictionaryapi.dev/?ref=devresourc.es
-https://api.citybik.es/v2/?ref=devresourc.es
-https://baconipsum.com/json-api/?ref=devresourc.es
-https://random-data-api.com/?ref=devresourc.es
-https://isevenapi.xyz/?ref=devresourc.es

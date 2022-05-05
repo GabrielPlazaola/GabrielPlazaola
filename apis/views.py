@@ -10,7 +10,7 @@ from django.template import loader
 response1 = requests.get("https://api.dictionaryapi.dev/api/v2/entries/en/hello")
 response2 = requests.get("http://api.citybik.es/v2/networks")
 response3 = requests.get("https://baconipsum.com/api/?type=all-meat")
-response4 = requests.get("https://random-data-api.com/api/cannabis/random_cannabis?size=20")
+response4 = requests.get("https://random-data-api.com/api/beer/random_beer/?size=25")
 response5 = requests.get("https://api.isevenapi.xyz/api/iseven/6/")
 
 def jprint(obj):
@@ -23,7 +23,7 @@ def primera(palabra):
     return apirespuesta
 
 def cuarta(cant):
-    respuesta = requests.get("https://random-data-api.com/api/cannabis/random_cannabis?size=" + str(cant))
+    respuesta = requests.get("https://random-data-api.com/api/beer/random_beer/?size=" + str(cant))
     apirespuesta = respuesta.json()
     return apirespuesta
 

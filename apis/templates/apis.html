@@ -78,15 +78,7 @@
       <!--API1-->
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-api1" role="tabpanel" aria-labelledby="v-api1-tab">
-          <h2> Api 1: Es Par?</h2>
-          <form target="_self">
-            <div class="mb-3">
-              <label for="numeroform" class="form-label">Ingresa un número</label>
-              <input type="numero" class="form-control" id="numeroform">
-            </div>
-            <button type="button" class="btn btn-primary" onclick="funcion1()">Es par?</button>
-          </form>
-          <p id="p1">Hello World!</p>          
+          <h2> Api 1</h2>       
         </div>
 
 
@@ -125,31 +117,33 @@
 
         <!--API3-->
         <div class="tab-pane fade" id="v-api3" role="tabpanel" aria-labelledby="v-api3-tab">
-          <h2>Api 3: Random Facts</h2>
+          <h2>Api 3: Cervezas</h2>
           <input class="form-control" type="text" id="input3" onkeyup="funcion3()" placeholder="Filtrar por ID" title="Type in a name">
           <div class="table-responsive">
             <table id="tabla3" class="table table-striped table-sm">
               <thead>
                 <tr class="header">
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Marca</th>
                   <th scope="col">ID</th>
-                  <th scope="col">Strain</th>
-                  <th scope="col">Cannabinoid</th>
-                  <th scope="col">Terpene</th>
-                  <th scope="col">Medical Use</th>
-                  <th scope="col">Health Benefit</th>
-                  <th scope="col">Type</th>
+                  <th scope="col">Estilo</th>
+                  <th scope="col">Hop</th>
+                  <th scope="col">Levadura</th>
+                  <th scope="col">Maltas</th>
+                  <th scope="col">Alcohol</th>
                 </tr>
               </thead>
               <tbody>
                 {% for i in apilist.4 %}
                 <tr>
+                  <td>{{i.name}}</td>
+                  <td>{{i.brand}}</td>
                   <td>{{i.id}}</td>
-                  <td>{{i.strain}}</td>
-                  <td>{{i.cannabinoid.0}}</td>
-                  <td>{{i.terpene}}</td>
-                  <td>{{i.medical_use}}</td>
-                  <td>{{i.health_benefit}}</td>
-                  <td>{{i.type}}</td>
+                  <td>{{i.style}}</td>
+                  <td>{{i.hop}}</td>
+                  <td>{{i.yeast}}</td>
+                  <td>{{i.malts}}</td>
+                  <td>{{i.alcohol}}</td>
                 </tr>
                 {% endfor %}
               </tbody>
@@ -160,7 +154,7 @@
 
 
 
-        <div class="tab-pane fade" id="v-api4" role="tabpanel" aria-labelledby="v-api4-tab">...4</div>
+        <div class="tab-pane fade" id="v-api4" role="tabpanel" aria-labelledby="v-api4-tab"></div>
         <div class="tab-pane fade" id="v-api5" role="tabpanel" aria-labelledby="v-api5-tab">...5</div>
         <div class="tab-pane fade" id="v-api6" role="tabpanel" aria-labelledby="v-api6-tab">...6</div>
         <div class="tab-pane fade" id="v-api7" role="tabpanel" aria-labelledby="v-api7-tab">...7</div>
@@ -172,12 +166,6 @@
     </main>
   </div>
 </div>
-
-
-<script>
-  function funcion1() {
-    document.getElementById("p1").innerHTML = "HAHAHA"}
-</script>
 
 
 <script>
