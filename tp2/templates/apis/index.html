@@ -1,0 +1,9 @@
+{% if apilist %}
+    <ul>
+    {% for i in apilist %}
+        <li><a href="{% url 'apis:detail' i %}">{{ i }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No apis are available.</p>
+{% endif %}

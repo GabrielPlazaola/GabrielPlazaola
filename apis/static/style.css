@@ -1,0 +1,182 @@
+/* GENERALES */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif,arial, helvetica;
+    text-decoration: none;
+    
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+body {
+    background: rgb(27, 74, 105);
+}
+
+/* CABECERA */
+#cabecera {
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+}
+
+/* LOGO */
+#logo {
+    float: left;
+    width: 540px;
+    height: 110px;
+}
+
+#logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;    
+}
+
+#logo a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+@media screen and (max-width: 555px){
+    #logo a {
+        font-size: 32px;
+    }
+}
+
+/* MENU */
+#menu {
+    clear: both;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to bottom, #F9F9F9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #eee;
+    overflow: hidden;
+}
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+    line-height: 44px;
+    border-right: 1px solid #d6d6d6;
+}
+
+#menu ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #838282;
+}
+
+#menu ul li a:hover {
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+}
+
+/* CONTENEDOR */
+#principal {
+    width: 82.8%;
+    min-height: 900px;
+    background: white;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid black;
+       
+}
+
+#principal h1 {
+    font-size: 32px;
+    color: #444;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal h2 {
+    font-size: 20px;
+    color: #444;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+#principal form input[type=submit] {
+    width: 100%;
+    background-color: rgb(27, 74, 105);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#principal form input[type=text], input[type=time], select , textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#principal #consignas {
+    text-align: justify;
+}
+
+#lectura_datos{
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#lectura_datos h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#principal #alerta_error{
+    color: red;
+    font-weight: bolder;
+}
+
+#principal #alerta_valido{
+    color: rgb(38, 116, 62);
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+/* PIE DE PAGINA */
+#pie {
+    clear: both;
+    width: 83.3%;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+    color: #666;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+}
